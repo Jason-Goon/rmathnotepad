@@ -21,7 +21,7 @@ fn main() -> Result<()> {
     let mut stdout = io::stdout();
 
     let mut contents = String::new();
-    file.read_to_string(&mut contents)?; // Use the read_to_string method from the Read trait
+    file.read_to_string(&mut contents)?; 
     file.read_to_string(&mut contents)?;
     let mut lines: Vec<String> = contents.split('\n').map(|s| s.to_string()).collect();
 
@@ -35,7 +35,6 @@ fn main() -> Result<()> {
             writeln!(stdout, "{}", line)?;
         }
 
-        // Make sure the cursor is set to the correct position after printing all lines
         execute!(stdout, cursor::MoveTo(cursor_position, current_line as u16))?;
         stdout.flush()?;
 
@@ -48,7 +47,7 @@ fn main() -> Result<()> {
                 KeyCode::Enter => {
                     current_line += 1;
                     lines.insert(current_line, String::new());
-                    cursor_position = 0; // Reset cursor position explicitly
+                    cursor_position = 0; 
                 },
                 KeyCode::Backspace => {
                     if cursor_position > 0 {
