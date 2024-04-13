@@ -30,7 +30,7 @@ To set up this project, you need Rust and Cargo installed on your machine.
 
 3. **Run the Application:**
    ```bash
-   cargo run --release
+   cargo run --release your_file_name.txt
    ```
 
 ## Usage
