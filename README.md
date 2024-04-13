@@ -49,4 +49,4 @@ Contributions to extend both the notepad and the calculator functionalities are 
 ## License
 
 This project is licensed under the Zero-Clause BSD License - see the LICENSE file for details.
-```
+
