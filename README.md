@@ -16,8 +16,8 @@ This project provides a terminal-based notepad-style calculator capable of parsi
 
 ## Usage
 1. **Start the Program:** Run the program using `cargo run`. Optionally, specify a file name to load previous expressions and functions.
-2. **Define Functions:** Use the syntax `functionName(x):= expression` to define functions. eq. "f(x):= 999x + 99" Whitespace/s required.
-3. **Evaluate Expressions:** Simply type expressions to evaluate them. Use defined functions in expressions, automatically solves in line change if syntax is correct e.q. "f = 9" will return "x = -0.09"
+2. **Define Functions:** Use the syntax `functionName(x):= expression` to define functions. eq. `f(x):= 999x + 99` Whitespace/s required.
+3. **Evaluate Expressions:** Simply type expressions to evaluate them. Use defined functions in expressions, automatically solves in line change if syntax is correct e.q. `f = 9` will return `x = -0.09`
 4. **Control Keys:**
    - **Enter:** Evaluate the current line or insert a new line.
    - **Backspace:** Delete the character behind the cursor.
