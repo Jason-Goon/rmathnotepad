@@ -1,4 +1,4 @@
-# Terminal Notepad & Future Programmable Calculator
+# Terminal Notepad & Programmable Calculator
 
 This project is currently a terminal-based notepad application designed to run in Unix-like environments. It serves as the foundational step towards developing a minimal programmable calculator. The notepad application allows for basic text editing directly in the terminal, with future plans to incorporate programmable calculator features.
 
@@ -7,9 +7,6 @@ This project is currently a terminal-based notepad application designed to run i
 - **Basic Text Editing**: Create, edit, and view text files directly in the terminal.
 - **Navigation**: Move the cursor using arrow keys, and perform edits with backspace, delete, and enter keys.
 - **Persistence**: Save edits to disk, allowing for continued editing in future sessions.
-
-## Planned Features
-
 - **Programmable Calculator**: Extend the notepad to include calculator functionalities where users can perform arithmetic operations and store results within the text files.
 - **Enhanced Navigation**: Improve text navigation and editing capabilities.
 
