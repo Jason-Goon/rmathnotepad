@@ -1,4 +1,3 @@
-```markdown
 # Programmable Calculator
 
 ## Overview
