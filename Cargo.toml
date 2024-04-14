@@ -7,4 +7,6 @@ edition = "2021"
 
 [dependencies]
 
-crossterm = "0.22"
+crossterm = "0.27.0"
+meval = "0.2.0"
+regex = "1.6.0" 
