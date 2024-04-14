@@ -1,49 +1,35 @@
-# Terminal Notepad & Programmable Calculator
+```markdown
+# Programmable Calculator
 
-This project is currently a terminal-based notepad application designed to run in Unix-like environments. It serves as the foundational step towards developing a minimal programmable calculator. The notepad application allows for basic text editing directly in the terminal, with future plans to incorporate programmable calculator features.
+## Overview
+This project provides a terminal-based notepad-style calculator capable of parsing and evaluating mathematical expressions and user-defined functions. It leverages the Rust programming language and the Crossterm library for terminal handling.
 
 ## Features
+- **Expression Evaluation:** Parse and evaluate linear expressions and other calculations directly from the terminal.
+- **Function Definition and Usage:** Users can define functions using a simple syntax and use these functions for various calculations.
+- **Interactive Terminal Interface:** Utilizes raw mode for terminal input handling, allowing for interactive editing of expressions and functions.
 
-- **Basic Text Editing**: Create, edit, and view text files directly in the terminal.
-- **Navigation**: Move the cursor using arrow keys, and perform edits with backspace, delete, and enter keys.
-- **Persistence**: Save edits to disk, allowing for continued editing in future sessions.
-- **Programmable Calculator**: Extend the notepad to include calculator functionalities where users can perform arithmetic operations and store results within the text files.
-- **Enhanced Navigation**: Improve text navigation and editing capabilities.
-
-## Installation
-
-To set up this project, you need Rust and Cargo installed on your machine.
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://your-repository-url.git
-   cd your-repository-directory
-   ```
-
-2. **Build the Project:**
-   ```bash
-   cargo build --release
-   ```
-
-3. **Run the Application:**
-   ```bash
-   cargo run --release your_file_name.txt
-   ```
+## Requirements
+- Rust Programming Language
+- Crossterm Library
+- Regex Library
+- Meval Crate for evaluating mathematical expressions
 
 ## Usage
+1. **Start the Program:** Run the program using `cargo run`. Optionally, specify a file name to load previous expressions and functions.
+2. **Define Functions:** Use the syntax `functionName(x):= expression` to define functions. eq. "f(x):= 999x + 99" Whitespace/s required.
+3. **Evaluate Expressions:** Simply type expressions to evaluate them. Use defined functions in expressions, automatically solves in line change if syntax is correct e.q. "f = 9" will return "x = -0.09"
+4. **Control Keys:**
+   - **Enter:** Evaluate the current line or insert a new line.
+   - **Backspace:** Delete the character behind the cursor.
+   - **Arrow Keys:** Navigate through the text.
+   - **Esc:** Save the current session (excluding comments) and exit the program.
 
-Once you run the application, you are presented with a simple text interface in the terminal. Here are the key commands:
-
-- **Arrow Keys**: Move the cursor within the text.
-- **Enter**: Insert a new line.
-- **Backspace**: Delete the character behind the cursor.
-- **Esc**: Save and exit the application.
-
-## Contributing
-
-Contributions to extend both the notepad and the calculator functionalities are welcome. Before making a contribution, please fork the repository and submit a pull request for review.
-
-## License
-
-This project is licensed under the Zero-Clause BSD License - see the [LICENSE](LICENSE) file for details.
-
+## Installation
+To set up the programmable calculator, follow these steps:
+```bash
+git clone https://github.com/Jason-Goon/rmathnotepad
+cd rmathnotepad
+cargo build --release
+cargo run --release i_am_a_file.txt
+```
